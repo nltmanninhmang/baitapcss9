@@ -5,53 +5,43 @@
     <title>CSS Flag Project</title>
     <style>
       /* Write your CSS Code here */
-      *{
+      * {
         box-sizing: border-box;
       }
-      body{
-        justify-content: center;
-        align-items: center;
+      body {
+        text-align: center; /* Căn giữa nội dung trong body */
       }
-      .flag{
+      .flag {
         width: 900px;
         height: 600px;
         background-color: red;
         color: white;
         text-align: center;
         font-size: 4rem;
-        align-items: center;
+        position: relative; /* Thêm position relative để căn giữa */
+        margin: 0 auto; /* Căn giữa flag trong body */
       }
-      .flag div{
+      .flag div {
         background-color: #042868;
         height: 340px;
         position: relative;
         margin-top: 65px;
       }
-      .flag div div{
+      .flag div div {
         width: 200px;
         height: 200px;
         border-radius: 50%;
         background-color: white;
         color: black;
         position: absolute;
-        /* top: 10%; */
-        left: 40%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        left: 50%; /* Căn giữa theo chiều ngang */
+        top: 50%; /* Căn giữa theo chiều dọc */
+        margin-left: -100px; /* Đẩy vòng tròn về bên trái một nửa chiều rộng */
+        margin-top: -100px; /* Đẩy vòng tròn lên trên một nửa chiều cao */
         text-align: center;
       }
     </style>
   </head>
-
-  <!-- 
-  IMPORTANT! Do not change any HTML
-Don't add any classes/ids/elements 
-Use what you know about combining selectors 
-and CSS specificity instead.
-Hint 1: The flag is 900px by 600px and the circle is 200px by 200px.
-Hint 2: You can use CSS inspection to get the colors from
--->
 
   <body>
     <div class="flag">
